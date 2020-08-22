@@ -58,7 +58,10 @@ public class Multimedia3 extends AppCompatActivity implements SurfaceHolder.Call
     }
 
     @Override
-    public void surfaceDestroyed(@NonNull SurfaceHolder surfaceHolder) {private void construirMediaController() {
+    public void surfaceDestroyed(@NonNull SurfaceHolder surfaceHolder) {
+
+    }
+    private void construirMediaController() {
         mediaController = new MediaController(this) {
             @Override
             public void hide() { }
@@ -76,8 +79,6 @@ public class Multimedia3 extends AppCompatActivity implements SurfaceHolder.Call
                 return super.dispatchKeyEvent(event);
             }
         };
-    }
-
     }
 
     @Override
